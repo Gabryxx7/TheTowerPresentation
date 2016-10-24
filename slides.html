@@ -16,7 +16,16 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-id="e8cc64655dfcb25eff25699194bb36f7"></section><section data-id="888a2b847b2ded7480cb772e4ffe13f3">
+			<section>
+                <div  id="startButton" class="sl-block" data-block-type="text" style="cursor: pointer; height: auto; min-width: 30px; min-height: 30px; width: 460px; left: 250px; top: 281px;">
+                    <div class="sl-block-content" style="z-index: 11; line-height: 1.131; font-size: 124%; background-color: rgba(0, 0, 0, 0); border-style: solid; border-color: rgb(255, 255, 255); border-radius: 39px; border-width: 9px;" data-has-line-height="">
+                        <h3>Start</h3>
+                        <h3>Presentation</h3>
+                    </div>
+                </div>
+            </section>
+				
+				<section data-id="888a2b847b2ded7480cb772e4ffe13f3">
 
 <div class="sl-block" data-block-type="text" style="height: auto; width: 960px; left: 0px; top: 0px;" data-block-id="24a9e9a8111adbe45670ad1b295eb541"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; transition-delay: 0.6s; letter-spacing: 0.22em; font-size: 216%; line-height: 0.923; text-align: center; transition-duration: 0.5s;" data-animation-type="slide-right" data-has-letter-spacing="" data-has-line-height="">
 <h1><span style="font-size:1.2em">The Tower</span></h1>
@@ -840,7 +849,10 @@ Openvr</h1>
 			});
 
 			if( window.hljs ) hljs.initHighlightingOnLoad();
-
+			
+			document.getElementById('startButton').addEventListener('click', function() {
+    Reveal.next();}, false);
+			
 		</script>
 		
 		<script src="js/particles.min.js"></script>
