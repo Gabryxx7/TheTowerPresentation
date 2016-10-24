@@ -14,10 +14,10 @@
 		<link rel="stylesheet" href="css/particlesjs.css">
 	</head>
 	<body>
-		<div id="slides-container" class="reveal">
+		<div id="slides-container" class="reveal" style="cursor: none">
 			<div class="slides">
 			<section>
-                <div  id="startButton" class="sl-block" data-block-type="text" style="cursor: pointer; height: auto; min-width: 30px; min-height: 30px; width: 460px; left: 250px; top: 281px;">
+                <div class="sl-block" data-block-type="text" style="cursor: pointer; height: auto; min-width: 30px; min-height: 30px; width: 460px; left: 250px; top: 281px;">
                     <div class="sl-block-content" style="z-index: 11; line-height: 1.131; font-size: 124%; background-color: rgba(0, 0, 0, 0); border-style: solid; border-color: rgb(255, 255, 255); border-radius: 39px; border-width: 9px;" data-has-line-height="">
                         <h3>Start</h3>
                         <h3>Presentation</h3>
@@ -898,7 +898,6 @@ Openvr</h1>
 });
 			if( window.hljs ) hljs.initHighlightingOnLoad();
 			
-		document.getElementById('startButton').addEventListener('click', function() {Reveal.next();}, false);
 		document.getElementById('slides-container').addEventListener('click', function() {Reveal.next();}, false);
 	
 	slides-container
