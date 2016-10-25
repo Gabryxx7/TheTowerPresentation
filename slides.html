@@ -899,8 +899,16 @@ Openvr</h1>
 			if( window.hljs ) hljs.initHighlightingOnLoad();
 			
 		document.getElementById('slides-container').addEventListener('click', function() {Reveal.next();}, false);
-	
-	slides-container
+		
+		function hideSlides(e) {
+			if (e.keyCode == 103) {
+			if(document.getElementById("particles-js").className == "top")
+				document.getElementById("particles-js").className = "";
+			else
+				document.getElementById("particles-js").className = "top";
+			}
+		}
+		document.addEventListener("keypress", hideSlides, false);
 			
 		</script>
 		
